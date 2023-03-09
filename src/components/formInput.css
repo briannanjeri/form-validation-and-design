@@ -1,0 +1,66 @@
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+form{
+  background-color: white;
+  padding: 0 60px;
+}
+h1{
+  color: rgb(75, 6, 75);
+  text-align: center;
+}
+button{
+    width: 100%;
+    height: 50px; 
+   padding: 0.5rem;
+   border: none;
+   background-color: rebeccapurple;
+   color: white;
+   border-radius: 5px;
+   font-size: 18px;
+   font-weight: bold;
+   cursor: pointer;
+   margin-top: 15px;
+   margin-bottom: 30px;
+}
+
+
+.FormInput{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  
+}
+
+input{
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+label{
+    font-size: 12px;
+    color: gray;
+}
+
+span{
+    font-size: 12px;
+    color: red;
+    padding: 3px;
+    display: none;
+}
+
+input:invalid[focused=true]{
+    border: 1px solid red;
+}
+
+input:invalid[focused=true]~span{
+    display: block;
+}
